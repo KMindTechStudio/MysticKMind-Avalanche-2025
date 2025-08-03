@@ -3,25 +3,22 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int currentHealth;
-    public int maxHealth;
-
     public TextMeshProUGUI healthText;
     public Animator healthTextAnim;
 
     void Start()
     {
-        healthText.text = "HP: " + currentHealth + "/" + maxHealth;
+        healthText.text = "HP: " + StatsManager.Instance.currentHealth + "/" + StatsManager.Instance.maxHealth;
     }
 
     public void ChangeHealth(int amount)
     {
-        currentHealth += amount;
+        StatsManager.Instance.currentHealth += amount;
         healthTextAnim.Play("TextUpdateAnim") ;
 
-        healthText.text = "HP: " + currentHealth + "/" + maxHealth;
+        healthText.text = "HP: " + StatsManager.Instance.currentHealth + "/" + StatsManager.Instance.maxHealth;
 
-        if (currentHealth <= 0)
+        if (StatsManager.Instance.currentHealth <= 0)
         {
             gameObject.SetActive(false);
         }
