@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class StatsManager : MonoBehaviour
 {
-    public static StatsManager Instance;
+    public static StatsManager Instance;    
+    public StatsUI statsUI;
     public TextMeshProUGUI healthText;
 
     [Header("Combat Stats")]
@@ -26,11 +27,6 @@ public class StatsManager : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
 
-    public void UpdateMaxHealth(int amount)
-    {
-        maxHealth += amount;
-        healthText.text = "HP: " + currentHealth + "/ " + maxHealth;
-    }
 
     private void Awake()
     {
@@ -38,5 +34,25 @@ public class StatsManager : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
+    }
+    public void UpdateMaxHealth(int amount)
+    {
+        maxHealth += amount;
+        healthText.text = "HP: " + currentHealth + "/ " + maxHealth;
+    }
+
+    public void UpdateHealth(int amount)
+    {
+        currentHealth += amount;
+        if (currentHealth >= maxHealth)
+            currentHealth = maxHealth;
+
+        healthText.text = "HP: " + currentHealth + "/ " + maxHealth;
+    }
+
+    public void UpdateSpeed(int amount)
+    {
+        speed += amount;
+        statsUI.UpdateAllStats();
     }
 }

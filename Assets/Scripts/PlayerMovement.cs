@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
 
     private bool isKnockedBack;
+    public bool isShooting;
 
     public PlayerCombat playerCombat;
 
@@ -22,7 +23,12 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(isKnockedBack == false)
+        if(isShooting == true)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        else if(isKnockedBack == false)
         {
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");

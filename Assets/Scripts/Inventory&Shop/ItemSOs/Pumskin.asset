@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6172f92c0e1fc234eb907142e101f9c7, type: 3}
+  m_Name: Pumskin
+  m_EditorClassIdentifier: 
+  itemName: Pumskin
+  itemDescription: "\u0110\xE2y l\xE0 Mushroom item....m\xF4 t\u1EA3 th\xEAm"
+  icon: {fileID: 8389134475083476877, guid: 4ea148f879901ba499de95d05247cc8a, type: 3}
+  isGold: 0
+  currentHealth: 5
+  maxHealth: 0
+  speed: 0
+  damage: 0
+  duration: 0
