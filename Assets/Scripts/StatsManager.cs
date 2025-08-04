@@ -1,8 +1,10 @@
+using TMPro;
 using UnityEngine;
 
 public class StatsManager : MonoBehaviour
 {
     public static StatsManager Instance;
+    public TextMeshProUGUI healthText;
 
     [Header("Combat Stats")]
     public int damage;
@@ -23,6 +25,12 @@ public class StatsManager : MonoBehaviour
     [Header("Health Stats")]
     public int maxHealth;
     public int currentHealth;
+
+    public void UpdateMaxHealth(int amount)
+    {
+        maxHealth += amount;
+        healthText.text = "HP: " + currentHealth + "/ " + maxHealth;
+    }
 
     private void Awake()
     {
