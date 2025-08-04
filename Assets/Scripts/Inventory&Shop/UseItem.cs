@@ -9,7 +9,7 @@ public class UseItem : MonoBehaviour
             StatsManager.Instance.UpdateHealth(itemSO.currentHealth);
 
         if(itemSO.maxHealth > 0)
-            StatsManager.Instance.UpdateHealth(itemSO.maxHealth);
+            StatsManager.Instance.UpdateMaxHealth(itemSO.maxHealth);
 
         if(itemSO.speed > 0)
             StatsManager.Instance.UpdateSpeed(itemSO.speed);
@@ -26,7 +26,7 @@ public class UseItem : MonoBehaviour
             StatsManager.Instance.UpdateHealth(-itemSO.currentHealth);
 
         if (itemSO.maxHealth > 0)
-            StatsManager.Instance.UpdateHealth(-itemSO.maxHealth);
+            StatsManager.Instance.UpdateMaxHealth(-itemSO.maxHealth);
 
         if (itemSO.speed > 0)
             StatsManager.Instance.UpdateSpeed(-itemSO.speed);

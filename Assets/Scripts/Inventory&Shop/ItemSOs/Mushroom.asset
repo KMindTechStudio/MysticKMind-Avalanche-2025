@@ -16,8 +16,9 @@ MonoBehaviour:
   itemDescription: "\u0110\xE2y l\xE0 Mushroom item....m\xF4 t\u1EA3 th\xEAm"
   icon: {fileID: 8793915729297761979, guid: 530d2f1dcdd9c454faeabc4ab0b6ade2, type: 3}
   isGold: 0
-  currentHealth: 5
-  maxHealth: 0
-  speed: 0
-  damage: 0
+  stackSize: 3
+  currentHealth: 3
+  maxHealth: 4
+  speed: 2
+  damage: 1
   duration: 0

@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6172f92c0e1fc234eb907142e101f9c7, type: 3}
-  m_Name: Steak
+  m_Name: Armour
   m_EditorClassIdentifier: 
-  itemName: Steak
+  itemName: Old Jacket
   itemDescription: "\u0110\xE2y l\xE0 Mushroom item....m\xF4 t\u1EA3 th\xEAm"
-  icon: {fileID: 5558420398955925738, guid: 64bdd67110fb73247baf5f3664129077, type: 3}
+  icon: {fileID: 2960402581040015946, guid: cf03d4f669f07ad48a1fd5724f0efe9c, type: 3}
   isGold: 0
   stackSize: 3
   currentHealth: 4
   maxHealth: 2
-  speed: 4
+  speed: 5
   damage: 1
   duration: 0
