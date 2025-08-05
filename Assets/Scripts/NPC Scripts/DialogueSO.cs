@@ -8,7 +8,7 @@ public class DialogueSO : ScriptableObject
 
     [Header("Conditional Requirements (Optional)")]
     public ActorSO[] requiredNPCs;
-
+    public ItemSO[] requiredItems;
 
     public bool IsConditionMet()
     {
@@ -20,8 +20,15 @@ public class DialogueSO : ScriptableObject
                     return false;
             }
         }
-        //Check for Items
-        //Check for Location
+
+        if(requiredItems.Length > 0)
+        {
+            foreach(var item in requiredItems)
+            {
+                if(!InventoryManager.Instance.HasItem(item))
+                    return false;
+            }
+        }
 
         return true;
     }

@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -18,6 +19,9 @@ public class DialogueManager : MonoBehaviour
     private DialogueSO currentDialogue;
     private int dialogueIndex;
 
+    private float lastDialogueEndTime;
+    private float dialogueCooldown = .1f;
+
     private void Awake()
     {
         if (Instance == null)
@@ -35,6 +39,9 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(DialogueSO dialogueSO)
     {
+        if (Time.unscaledTime - lastDialogueEndTime < dialogueCooldown)
+            return;
+
         currentDialogue = dialogueSO;
         dialogueIndex = 0;
         isDialogueActive = true;
@@ -89,6 +96,8 @@ public class DialogueManager : MonoBehaviour
             choiceButtons[0].onClick.AddListener(EndDialogue); 
             choiceButtons[0].gameObject.SetActive(true);
         }
+
+        EventSystem.current.SetSelectedGameObject(choiceButtons[0].gameObject);
     }
 
     private void ChooseOption(DialogueSO dialogueSO)
@@ -112,6 +121,8 @@ public class DialogueManager : MonoBehaviour
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
+
+        lastDialogueEndTime = Time.unscaledTime;
     }
 
     private void ClearChoices()
