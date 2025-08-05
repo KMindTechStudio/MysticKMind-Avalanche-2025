@@ -10,17 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2bbab646b840bd46beb76bcb08a1bf9, type: 3}
-  m_Name: Basic Greeting
+  m_Name: Basic Greeting_NoInterested
   m_EditorClassIdentifier: 
   lines:
   - speaker: {fileID: 11400000, guid: 0e2c4edb8a1277c4bb3c107bfc91f786, type: 2}
-    text: Hello, KMind Co!
+    text: Aww that;s too bored.
   - speaker: {fileID: 11400000, guid: 2df1c54bb9d63ce468652f42971369fd, type: 2}
-    text: I heard you just a new blog on your Facebook about events in Avalanche.
-  - speaker: {fileID: 11400000, guid: 0e2c4edb8a1277c4bb3c107bfc91f786, type: 2}
-    text: Sure, You should check it out, Dev Nguyen
-  options:
-  - optionText: Tell me more!
-    nextDialogue: {fileID: 11400000, guid: c2dff6554e5a0c447a8eb294f989b81c, type: 2}
-  - optionText: No Interested.
-    nextDialogue: {fileID: 11400000, guid: d41cfcdd2d7d8dd4e86321c337ff217a, type: 2}
+    text: See you later, KMind Co
+  options: []
