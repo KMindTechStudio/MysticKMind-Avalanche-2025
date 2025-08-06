@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class NPC_Talk : MonoBehaviour
@@ -35,11 +35,17 @@ public class NPC_Talk : MonoBehaviour
         if (Input.GetButtonDown("Interact"))
         {
             if (DialogueManager.Instance.isDialogueActive)
+            {
                 DialogueManager.Instance.AdvanceDialogue();
+            }
             else
             {
                 CheckForNewConversation();
-                DialogueManager.Instance.StartDialogue(currentConversation);
+
+                if (currentConversation != null)
+                    DialogueManager.Instance.StartDialogue(currentConversation);
+                else
+                    Debug.LogWarning("Không có hội thoại nào khả dụng cho NPC này.");
             }
         }
     }
