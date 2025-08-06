@@ -17,8 +17,8 @@ MonoBehaviour:
   icon: {fileID: 2960402581040015946, guid: cf03d4f669f07ad48a1fd5724f0efe9c, type: 3}
   isGold: 0
   stackSize: 3
-  currentHealth: 4
-  maxHealth: 2
-  speed: 5
+  currentHealth: 2
+  maxHealth: 1
+  speed: 0
   damage: 1
   duration: 0
