@@ -378,7 +378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particleSprite: {fileID: -5335760886059047966, guid: 0323cc1feb8106d4a9afee64c831369d, type: 3}
   maxParticles: 15
-  sizeRange: {x: 100, y: 250}
+  sizeRange: {x: 100, y: 150}
   lifetimeMin: 4
   lifetimeMax: 8
   speedMin: 50

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0323cc1feb8106d4a9afee64c831369d
+guid: 5c7349dd7aadac0459c2462363a1d07e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5335760886059047966
-    second: flare_01_0
+      213: 6319878064711150532
+    second: btnClose_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flare_01_0
+      name: btnClose_0
       rect:
         serializedVersion: 2
-        x: 72
-        y: 72
-        width: 436
-        height: 440
+        x: 103
+        y: 103
+        width: 294
+        height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e3e6048eb193f5b0800000000000000
-      internalID: -5335760886059047966
+      spriteID: 4cb24ee9d97b4b750800000000000000
+      internalID: 6319878064711150532
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flare_01_0: -5335760886059047966
+      btnClose_0: 6319878064711150532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
