@@ -15,3 +15,16 @@ MonoBehaviour:
   questName: 'Test Quest '
   questDescription: This is a test quest 1
   questLevel: 10
+  objectives:
+  - description: Collect 3 Mushroom
+    target: {fileID: 11400000, guid: d8bb4b470a0901643bda67155daad2fa, type: 2}
+    requiredAmount: 2
+    currentAmount: 0
+  - description: Visit New Land
+    target: {fileID: 102900000, guid: 237ef350a15380841b3ea193bf84dcc2, type: 3}
+    requiredAmount: 1
+    currentAmount: 0
+  - description: Return NPC KMind Co
+    target: {fileID: 11400000, guid: 0e2c4edb8a1277c4bb3c107bfc91f786, type: 2}
+    requiredAmount: 1
+    currentAmount: 0
