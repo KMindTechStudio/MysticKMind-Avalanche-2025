@@ -57496,7 +57496,7 @@ Tilemap:
       - {fileID: -5096520015912206362, guid: e3640c9c1a502544bb6f0b1038daaffd, type: 3}
       - {fileID: 6994710136649292932, guid: e3640c9c1a502544bb6f0b1038daaffd, type: 3}
       - {fileID: -7590220760718205482, guid: e3640c9c1a502544bb6f0b1038daaffd, type: 3}
-      m_AnimationSpeed: 7.0000005
+      m_AnimationSpeed: 7
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 20, y: -12, z: 0}
@@ -58054,7 +58054,7 @@ Tilemap:
       - {fileID: 5630160346097760845, guid: 062d6544381cc9b48830ffb64230063d, type: 3}
       - {fileID: 5439255145328125195, guid: 062d6544381cc9b48830ffb64230063d, type: 3}
       - {fileID: -8736350461500244166, guid: 062d6544381cc9b48830ffb64230063d, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 11, y: 12, z: 0}
@@ -60185,7 +60185,7 @@ Tilemap:
       - {fileID: -1521521136, guid: 47b1bcf07595c65489f9c2d9a3878bc5, type: 3}
       - {fileID: 1638937541, guid: 47b1bcf07595c65489f9c2d9a3878bc5, type: 3}
       - {fileID: -1891295671, guid: 47b1bcf07595c65489f9c2d9a3878bc5, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -14, y: -14, z: 0}
@@ -60455,7 +60455,7 @@ Tilemap:
       - {fileID: -1521521136, guid: 47b1bcf07595c65489f9c2d9a3878bc5, type: 3}
       - {fileID: 1638937541, guid: 47b1bcf07595c65489f9c2d9a3878bc5, type: 3}
       - {fileID: -1891295671, guid: 47b1bcf07595c65489f9c2d9a3878bc5, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 5, y: -9, z: 0}
@@ -64018,7 +64018,7 @@ Tilemap:
       - {fileID: -7511650321784113099, guid: c587f9affb7ec8e4db77992ea8268aba, type: 3}
       - {fileID: 5249359379302588804, guid: c587f9affb7ec8e4db77992ea8268aba, type: 3}
       - {fileID: -38965159418246943, guid: c587f9affb7ec8e4db77992ea8268aba, type: 3}
-      m_AnimationSpeed: 7
+      m_AnimationSpeed: 7.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 21, y: -12, z: 0}
@@ -64108,7 +64108,7 @@ Tilemap:
       - {fileID: -7511650321784113099, guid: c587f9affb7ec8e4db77992ea8268aba, type: 3}
       - {fileID: 5249359379302588804, guid: c587f9affb7ec8e4db77992ea8268aba, type: 3}
       - {fileID: -38965159418246943, guid: c587f9affb7ec8e4db77992ea8268aba, type: 3}
-      m_AnimationSpeed: 7
+      m_AnimationSpeed: 7.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -22, y: -3, z: 0}
@@ -79677,7 +79677,7 @@ Tilemap:
       - {fileID: 5630160346097760845, guid: 062d6544381cc9b48830ffb64230063d, type: 3}
       - {fileID: 5439255145328125195, guid: 062d6544381cc9b48830ffb64230063d, type: 3}
       - {fileID: -8736350461500244166, guid: 062d6544381cc9b48830ffb64230063d, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: -6, z: 0}
@@ -80482,6 +80482,7 @@ GameObject:
   - component: {fileID: 1139335049}
   - component: {fileID: 1139335048}
   - component: {fileID: 1139335047}
+  - component: {fileID: 1139335050}
   m_Layer: 5
   m_Name: Complete
   m_TagString: Untagged
@@ -80552,7 +80553,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1139335048}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2016182475}
+        m_TargetAssemblyTypeName: QuestLogUI, Assembly-CSharp
+        m_MethodName: OnCompleteQuestClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1139335048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80591,6 +80604,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139335045}
   m_CullTransparentMesh: 1
+--- !u!225 &1139335050
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139335045}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1144171764
 GameObject:
   m_ObjectHideFlags: 0
@@ -87935,6 +87960,7 @@ GameObject:
   - component: {fileID: 1668681217}
   - component: {fileID: 1668681216}
   - component: {fileID: 1668681215}
+  - component: {fileID: 1668681218}
   m_Layer: 5
   m_Name: Accept
   m_TagString: Untagged
@@ -88005,7 +88031,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1668681216}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2016182475}
+        m_TargetAssemblyTypeName: QuestLogUI, Assembly-CSharp
+        m_MethodName: OnAcceptQuestClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1668681216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88044,6 +88082,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668681213}
   m_CullTransparentMesh: 1
+--- !u!225 &1668681218
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668681213}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1686227784
 GameObject:
   m_ObjectHideFlags: 0
@@ -93029,7 +93079,7 @@ Tilemap:
       - {fileID: -1634829680, guid: c138f6d8ab68da84c9927e87dbddd37c, type: 3}
       - {fileID: 1154469111, guid: c138f6d8ab68da84c9927e87dbddd37c, type: 3}
       - {fileID: -890963684, guid: c138f6d8ab68da84c9927e87dbddd37c, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -5, y: -22, z: 0}
@@ -93239,7 +93289,7 @@ Tilemap:
       - {fileID: 1853202882, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
       - {fileID: 756963194, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
       - {fileID: -721415669, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 12, y: -21, z: 0}
@@ -93359,7 +93409,7 @@ Tilemap:
       - {fileID: -135897520, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
       - {fileID: -2087313786, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
       - {fileID: 1289293045, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -22, y: -19, z: 0}
@@ -94019,7 +94069,7 @@ Tilemap:
       - {fileID: -135897520, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
       - {fileID: -2087313786, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
       - {fileID: 1289293045, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 8, y: -13, z: 0}
@@ -94064,7 +94114,7 @@ Tilemap:
       - {fileID: -4884028467403954897, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
       - {fileID: 1194021783, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
       - {fileID: 1928735887, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -32, y: -12, z: 0}
@@ -94139,7 +94189,7 @@ Tilemap:
       - {fileID: -135897520, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
       - {fileID: -2087313786, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
       - {fileID: 1289293045, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -1, y: -9, z: 0}
@@ -94199,7 +94249,7 @@ Tilemap:
       - {fileID: -1634829680, guid: c138f6d8ab68da84c9927e87dbddd37c, type: 3}
       - {fileID: 1154469111, guid: c138f6d8ab68da84c9927e87dbddd37c, type: 3}
       - {fileID: -890963684, guid: c138f6d8ab68da84c9927e87dbddd37c, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -6, y: -8, z: 0}
@@ -94469,7 +94519,7 @@ Tilemap:
       - {fileID: -135897520, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
       - {fileID: -2087313786, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
       - {fileID: 1289293045, guid: 4820f1a34a0850f4f996cfdee55e2a5c, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -35, y: -3, z: 0}
@@ -95204,7 +95254,7 @@ Tilemap:
       - {fileID: 1423621527, guid: c138f6d8ab68da84c9927e87dbddd37c, type: 3}
       - {fileID: -868842191, guid: c138f6d8ab68da84c9927e87dbddd37c, type: 3}
       - {fileID: 1982883280, guid: c138f6d8ab68da84c9927e87dbddd37c, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -19, y: 20, z: 0}
@@ -105555,6 +105605,9 @@ MonoBehaviour:
   - {fileID: 1933894175}
   - {fileID: 693474024}
   questCanvas: {fileID: 1586847715}
+  acceptCanvasGroup: {fileID: 1668681218}
+  declineCanvasGroup: {fileID: 2099877232}
+  completeCanvasGroup: {fileID: 1139335050}
 --- !u!1001 &2027575831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -107436,6 +107489,7 @@ GameObject:
   - component: {fileID: 2099877231}
   - component: {fileID: 2099877230}
   - component: {fileID: 2099877229}
+  - component: {fileID: 2099877232}
   m_Layer: 5
   m_Name: Decline
   m_TagString: Untagged
@@ -107506,7 +107560,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2099877230}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2016182475}
+        m_TargetAssemblyTypeName: QuestLogUI, Assembly-CSharp
+        m_MethodName: OnDeclineQuestClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2099877230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107545,6 +107611,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099877227}
   m_CullTransparentMesh: 1
+--- !u!225 &2099877232
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099877227}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2100960577
 GameObject:
   m_ObjectHideFlags: 0
