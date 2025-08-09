@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a5411d913ad7294b9f6c22c95cc703e, type: 3}
-  m_Name: Quest_Test
+  m_Name: Quest_Test 2
   m_EditorClassIdentifier: 
-  questName: Quest 1
-  questDescription: This is a test quest 1
-  questLevel: 10
+  questName: Quest 2
+  questDescription: Let 's test Quest 2
+  questLevel: 15
   objectives:
   - description: Collect 3 Mushroom
     target: {fileID: 11400000, guid: d8bb4b470a0901643bda67155daad2fa, type: 2}

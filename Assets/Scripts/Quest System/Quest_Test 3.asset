@@ -10,18 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a5411d913ad7294b9f6c22c95cc703e, type: 3}
-  m_Name: Quest_Test
+  m_Name: Quest_Test 3
   m_EditorClassIdentifier: 
-  questName: Quest 1
-  questDescription: This is a test quest 1
-  questLevel: 10
+  questName: Quest 3
+  questDescription: This is a test 3
+  questLevel: 0
   objectives:
   - description: Collect 3 Mushroom
     target: {fileID: 11400000, guid: d8bb4b470a0901643bda67155daad2fa, type: 2}
     requiredAmount: 2
-  - description: Visit New Land
-    target: {fileID: 102900000, guid: 237ef350a15380841b3ea193bf84dcc2, type: 3}
-    requiredAmount: 1
-  - description: Return NPC KMind Co
-    target: {fileID: 11400000, guid: 0e2c4edb8a1277c4bb3c107bfc91f786, type: 2}
-    requiredAmount: 1
